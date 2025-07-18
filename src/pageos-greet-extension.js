@@ -2,6 +2,12 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
+/*
+ * @fileoverview PageOS 登录扩展
+ * @author PJ568
+ * @license MPL-2.0
+ */
+
 // 本扩展需要非沙盒环境运行：websocket
 // This extension requires disabling sandboxing: websocket
 class PageOSLoginExtension {

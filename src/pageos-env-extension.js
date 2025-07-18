@@ -2,12 +2,18 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
+/*
+ * @fileoverview PageOS 环境检测扩展
+ * @author PJ568
+ * @license MPL-2.0
+ */
+
 // 本扩展需要非沙盒环境运行：读取 window.location
 // This extension requires disabling sandboxing: access window.location
 class PageOSEnvironmentExtension {
   constructor(runtime) {
     this.runtime = runtime;
-    this.currentEnv = "未知环境";
+    this.currentEnv = "未知环境"; // '未知环境', '网页环境', '登录环境', '用户环境'
   }
 
   getInfo() {
@@ -69,7 +75,7 @@ class PageOSEnvironmentExtension {
       this.currentEnv = "登录环境";
     } else {
       const port = window.location.port;
-      if (!port || port === "80") {
+      if (!port || port === "80" || port === "443") {
         this.currentEnv = "网页环境";
       } else {
         this.currentEnv = "未知环境";
