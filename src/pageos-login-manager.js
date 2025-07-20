@@ -12,7 +12,11 @@
 (function (Scratch) {
   "use strict";
 
-  const DEFAULT_CSS = `h1 {
+  const DEFAULT_CSS = `#auth {
+    height: 100%;
+    width: 100%;
+  }
+  h1 {
     font-size: xx-large;
   }
   summary {
