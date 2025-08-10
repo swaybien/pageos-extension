@@ -251,6 +251,8 @@
             items: ["x", "y", "width", "height", "state", "logs", "all"],
           },
         },
+        // 声明为非沙盒扩展
+        unsandboxed: true,
       };
     }
 

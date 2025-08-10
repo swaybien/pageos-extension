@@ -10,3 +10,6 @@
   提供图形界面用于和 [pageos-greet](https://github.com/swaybien/pageos-greet) 登录管理器 API 交互。
 - ~~[pageos-greet-extension.js](src/pageos-greet-extension.js)：~~
   ~~与 [pageos-login-manager.js](src/pageos-login-manager.js) 功能相似，但不提供图形界面，已被弃用。~~
+- [pageos-weather.js](src/pageos-weather.js)：
+  - 实现了温度、体感温度、下雨概率、湿度等多种天气数据的获取
+  - 支持缓存机制，提高数据获取效率
