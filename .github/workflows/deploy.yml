@@ -1,0 +1,28 @@
+name: 部署
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions: write-all
+    name: 部署
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: PJ-568/MARKDOWN.HTML@v1.17.8
+
+      - uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "."
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
