@@ -1,6 +1,6 @@
 # [pageos-extension](https://github.com/swaybien/pageos-extension)
 
-本仓库用于存放 [PageOS](https://github.com/swaybien/pageos) 项目相关的扩展：
+本仓库用于存放 [PageOS](https://github.com/swaybien/pageos) 项目相关的 Scratch/Turbowarp 扩展：
 
 - [pageos-custom-html-extension.js](src/pageos-custom-html-extension.js)：
   - 用于在舞台上显示自定义 HTML 元素内容
